@@ -1,17 +1,16 @@
 module.exports = {
     devtool: 'eval-source-map',
-    entry: __dirname + "/src/main.js", //メインJSファイルパス
+    entry: __dirname + "/src/main.js",
     output: {
-        path: __dirname + "/public", //パッケージしたJSファイルの格納フォルダ
-        filename: "bundle.js" //パッケージしたJSファイル
+        path: __dirname + "/public",
+        filename: "bundle.js"
     },
     devServer: { // 内蔵サーバ設定
-        contentBase: "./public", //サーバファイルフォルダ（index.html、資源ファイル、bundleJSなど）
-        historyApiFallback: true, //
-        inline: true, //ソースコードの修正に伴い、WEBページをリアルタイム更新する
-        // host: '10.167.20.58' //IPアドレス形式でもサーバをアクセスできようにする（例えば：10.167.20.3）
+        contentBase: "./public", 
+        historyApiFallback: true,
+        inline: true,
+        // host: 'xx.xx.xx.xx'
     },
-    // babel設定
     module: {
         rules: [{
             test: /(\.jsx|\.js)$/,
