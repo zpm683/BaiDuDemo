@@ -9,7 +9,7 @@
     "server": "webpack-dev-server --open"
   },
   "author": "zpm",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
